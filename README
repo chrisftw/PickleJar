@@ -1,0 +1,28 @@
+This is a simple program for a simple purpose.
+
+Created by Chris Reister at a Ruby Users Group meeting in about 10 minutes because of our giveaways required adding a bunch of names to an array and picking a random winner at many meetings.  Now we have a tool we can use to help keep it really random.
+
+I am not much of a test suite type of guy, but wrote my own simple test frame work for this, so this include SimpleTest, which I may release as a separate project soon.
+
+This was designed as a command line tool.  I am sure it will morph if I have time, or others want to make edits.  My Ruby Users Group is planning on integrating it into our website to make giveaways and drawings quick simple and online, as a learning experience for the users.
+
+Simple use via irb:
+> irb
+
+> require 'pickle_jar'
+> PickleJar.add_names("Chris, Karmen, Aaron, Josh, Andrew")
+> PickleJar.winner_is
+>> "Karmen"
+
+It includes functions:
+PickleJar.add_name
+PickleJar.add_names
+PickleJar.remove_name
+PickleJar.remove_names
+PickleJar.winner_is
+PickleJar.shake
+PickleJar.peek_in_jar
+PickleJar.empty
+
+how to run the SimpleTest
+> ruby pickle_jar_test.rb
